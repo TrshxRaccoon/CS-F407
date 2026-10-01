@@ -1,0 +1,45 @@
+LAB-5 CONDITIONAL PROBABILITY TABLES
+
+Dataset: six supplied sentences with <START> and <END> markers.
+
+FIRST-ORDER: P(next word | current word)
+
+Input context: the
+Output: {'cat': 0.25, 'mat': 0.16666666666666666, 'rug': 0.16666666666666666, 'dog': 0.25, 'park': 0.16666666666666666}
+Probability total: 1.00
+Most probable next word: cat
+
+Input context: cat
+Output: {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Probability total: 1.00
+
+Input context: dog
+Output: {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Probability total: 1.00
+
+Input context: sat
+Output: {'on': 1.0}
+Probability total: 1.00
+
+Input context: ran
+Output: {'to': 1.0}
+Probability total: 1.00
+
+SECOND-ORDER: P(next word | previous two words)
+
+Input context: ('<START>', '<START>')
+Output: {'the': 1.0}
+Probability total: 1.00
+
+Input context: ('the', 'cat')
+Output: {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Probability total: 1.00
+
+Input context: ('the', 'dog')
+Output: {'sat': 0.6666666666666666, 'ran': 0.3333333333333333}
+Probability total: 1.00
+
+NORMALISATION RESULTS
+First-order observed contexts: every row totals 1.00
+Second-order observed contexts: every row totals 1.00
+Unknown first-order context 'unknown': {}

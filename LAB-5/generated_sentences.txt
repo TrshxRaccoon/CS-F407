@@ -1,0 +1,20 @@
+GENERATED TEXT EXAMPLES
+
+First-order greedy, maximum 20 tokens:
+the cat sat on the cat sat on the cat sat on the cat sat on the cat sat on
+
+First-order sampling, seed 7:
+the cat sat on the mat
+
+Second-order greedy, maximum 20 tokens:
+the cat sat on the mat
+
+Second-order sampling, seed 7:
+the cat sat on the mat
+
+Additional first-order sampled examples:
+Seed 1: the park
+Seed 2: the park
+Seed 3: the rug
+Seed 4: the cat sat on the mat
+Seed 5: the dog ran to the park
